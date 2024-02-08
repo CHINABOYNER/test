@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.InfoXXXDao" >
+    <insert id="createInfoXXX1">
+        CREATE TABLE IF NOT EXISTS scuec.info_${tableName} (
+                `id` INT NOT NULL AUTO_INCREMENT,
+                `minus` INT NOT NULL, -- 今日离校
+                `addition` INT NOT NULL, -- 今日返校
+                `sum` INT NOT NULL, -- 今日在校
+                `collegesum` INT NOT NULL, -- 学院总人数
+                `other` INT, -- 其他
+                `college` VARCHAR(255) NOT NULL, -- 学院名
+                `type` INT NOT NULL, -- 本/研
+                `head` VARCHAR(255) NOT NULL, -- 负责人账号
+                `head_name` VARCHAR(255) NOT NULL, -- 负责人姓名
+                `head_phone` VARCHAR(255) NOT NULL, -- 负责人电话
+                `remarks` VARCHAR(255) NOT NULL, -- 备注
+                `date` VARCHAR(255) NOT NULL,
+                `time` VARCHAR(255) NOT NULL,
+                PRIMARY KEY (`id`))
+            ENGINE = InnoDB
+            DEFAULT CHARACTER SET = utf8
+            COLLATE = utf8_bin;
+    </insert>
+    <insert id="insertInfoXXX1">
+        insert into scuec.info_${tableName}(minus,addition,sum,collegesum,other,college,type,head,head_name,head_phone,remarks,date,time)
+        values(#{infoXXX.minus},#{infoXXX.addition},#{infoXXX.sum},#{infoXXX.collegesum},#{infoXXX.other},#{infoXXX.college},
+               #{infoXXX.type},#{infoXXX.head},#{infoXXX.head_name},#{infoXXX.head_phone},#{infoXXX.remarks},#{infoXXX.date},#{infoXXX.time});
+    </insert>
+    <update id="updateInfoXXX1">
+        update info_${tableName} set minus=#{infoXXX.minus}, addition=#{infoXXX.addition}, sum=#{infoXXX.sum}, other=#{infoXXX.other},
+        collegesum=#{infoXXX.collegesum}, head=#{infoXXX.head}, head_name=#{infoXXX.head_name},
+        head_phone=#{infoXXX.head_phone}, remarks=#{infoXXX.remarks},date=#{infoXXX.date}, time=#{infoXXX.time}
+        <where>
+            date=#{infoXXX.date} and type=#{infoXXX.type}
+        </where>
+    </update>
+    <update id="dropInfoXXX1">
+        DROP TABLE IF EXISTS scuec.info_${tableName};
+    </update>
+
+
+    <select id="getInfoXXX1" resultType="com.example.domain.POJO.InfoXXX">
+        select minus, addition, sum, collegesum, other, college, type, head, head_name, head_phone, remarks, date, time
+        from info_${tableName} ORDER BY id DESC LIMIT 1
+    </select>
+    <select id="getInfoXXXByDate1" resultType="com.example.domain.POJO.InfoXXX">
+        select minus, addition, sum, collegesum, other, college, type, head, head_name, head_phone, remarks, date, time
+        from info_${tableName}
+        <where>
+            date=#{date} and type=#{type}
+        </where>
+    </select>
+    <select id="getInfoXXXByDate2" resultType="com.example.domain.POJO.InfoXXX">
+        select minus, addition, sum, collegesum, other, college, type, head, head_name, head_phone, remarks, date, time
+        from info_${tableName}
+        <where>
+            date=#{date}
+        </where>
+        ORDER BY id DESC LIMIT 1
+    </select>
+    <select id="getInfoXXX2" resultType="com.example.domain.POJO.InfoXXX">
+        select minus, addition, sum, collegesum, other, college, type, head, head_name, head_phone, remarks, date, time
+        from info_${tableName}
+        <where>
+            type=#{type}
+        </where>
+        ORDER BY id DESC LIMIT 1
+    </select>
+</mapper>
