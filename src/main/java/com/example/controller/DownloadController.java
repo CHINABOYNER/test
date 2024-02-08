@@ -184,7 +184,7 @@ public class DownloadController {
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 //        String dateString = simpleDateFormat.format(date);
-        String dateString = "2024-01-13";
+        String dateString = "2024-01-1";
 
         List<UserInfo> ordinaryUserList = userInfoDao.getOrdinaryUserList();
         List<List<String>> result = new ArrayList<>();
