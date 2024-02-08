@@ -1,0 +1,8 @@
+<view class="web" style="background-image: linear-gradient(to top,{{background}},white);">  
+    <image src="{{icon}}" class="title_icon"/>
+    <text class="title_text" style="color: {{color}}; border-bottom: 2px {{color}} dotted;">菜鸟驿站</text>
+    <image src="{{image}}" class="answer_image" style="border: 2px {{color}} dotted;"/>
+    <image src="{{answer_icon}}" class="answer_icon" bindtap="click_icon"/>
+    <text class="message" style="border: 1px {{color}} solid; color: {{color}};">{{text}}</text>
+    <button class="next" wx:if="{{flag}}" style="height: 100rpx; border: 2px {{color}} dotted; color: {{color}};" bindtap="next">{{button_text}}</button>
+</view>

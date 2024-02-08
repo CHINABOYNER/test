@@ -1,0 +1,18 @@
+<view class="web">
+    <image src="../../images/xiaobi_music.png" class="xiaobi_music"/>
+    <image src="../../images/wave.png" class="wave"/>
+    <image src="../../images/bitworkshop_logo_blue.png" class="{{bitworkshop}}" style="{{animation}}"/>
+    <view class="message">
+        <text class="text text1">{{num}}人正在听...</text>
+        <!-- <text class="text text2">加入您喜欢的歌{{right_num}}/{{wrong_num}}</text> -->
+        <text class="text text2">一曲肝肠断</text>
+        <!-- <text class="text text3">{{score}}</text> -->
+        <text class="text text3">天涯何处觅知音</text>
+    </view>
+    <image src="{{play_icon}}" class="play_icon" bindtap="{{play_bind}}"/>
+    <view class="button_view">
+        <button style="height: 40px; width: 40vw;" class="button" bindtap="rePlay">重听一遍</button>
+        <!-- <button style="height: 40px; width: 40vw;" class="button" bindtap="next">猜地点</button> -->
+        <button style="height: 40px; width: 40vw;" class="button" bindtap="nextMusic">下一首</button>
+    </view>
+</view>

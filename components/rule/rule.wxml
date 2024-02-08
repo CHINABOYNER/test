@@ -1,0 +1,11 @@
+<view class="web">
+    <view class="rule_view">
+        <view class="rule_message" wx:if="{{show_text}}">
+            <text class="title">规则介绍</text>
+            <view class="message_view">
+                <text class="message">1111111111111111111111111111</text>
+                <text class="message">2222222222222222222222222222</text>
+            </view>
+        </view>
+    </view>
+</view>

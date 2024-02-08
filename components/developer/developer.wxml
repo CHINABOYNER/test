@@ -1,0 +1,10 @@
+<view class="web">
+    <image src="../../images/bitworkshop_logo_magic_little.png" class="bitworkshop_icon"/>
+    <image src="../../images/note_2_purple_little.png" class="note"/>
+    <text class="message_title">比特工场出品</text>
+    <view class="message_view">
+        <text class="message">产品:王海尧</text>
+        <text class="message">设计:黄怡曦、向意嵩、龙海文</text>
+        <text class="message">程序:龙海文、梁靖松</text>
+    </view>
+</view>

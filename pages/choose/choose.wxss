@@ -1,0 +1,57 @@
+.web {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to top, #89E4CD, #8EAEE6);
+}
+
+.message_view {
+    position: absolute;
+    height: 46vh;
+    width: 66vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translate(-50% , 0);
+    left: 50%;
+    top: 15%;
+    border-radius: 15px;
+    padding: 2vh 2vw;
+}
+
+.title {
+    position: absolute;
+    line-height: 3vh;
+    font-size: 3vh;
+    transform: translate(-50% , 0);
+    left: 50%;
+    padding: 1vh;
+    border-bottom: 1px black solid;
+}
+
+.choose_view {
+    position: absolute;
+    height: 32vh;
+    width: 66vw;
+    top: 14vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.choose {
+    margin: 1vh 3vw;
+    line-height: 4vh;
+    border-radius: 15px;
+    font-family: serif;
+    font-size: 40rpx;
+}
+
+.next {
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 90vh;
+    left: 50%;
+    background-color: transparent;
+    border: 1px white solid;
+    color: white;
+    border-radius: 15px;
+    z-index: 2;
+}

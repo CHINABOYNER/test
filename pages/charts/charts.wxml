@@ -1,0 +1,66 @@
+<!-- 这部分页面建议使用wx:for动态载入 -->
+<view class="web">
+    <image src="https://iashaw-1318257216.cos.ap-shanghai.myqcloud.com/MDYY/charts_background.png" mode="aspectFill" class="background"/>
+    <image src="https://iashaw-1318257216.cos.ap-shanghai.myqcloud.com/MDYY/charts_back.png" class="back_icon"
+    style="top: {{menuTop}}px; height: {{menuHeight}}px; width: {{menuHeight}}px; min-height: {{menuHeight}}; left:{{menuRight}}px;" bindtap="back"/>
+    <text class="charts_title" style="top: {{menuTop}}px; height: {{menuHeight}}px; line-height: {{menuHeight}}px;">排行榜</text>
+    <view class="bestTop">
+        <swiper class="bestTop_view" circular="true" previous-margin="150rpx" next-margin="150rpx" easing-function="easeInCubic" interval="5000" autoplay="true">
+            <swiper-item class="bestTop_item">
+                <image src="{{testImage}}" class="bestTop_image"/>
+                <text class="bestTop_text_1">{{firstName}}</text>
+                <text class="bestTop_text_2">{{firstScore}}</text>
+            </swiper-item>
+            <swiper-item class="bestTop_item">
+                <image src="{{testImage}}" class="bestTop_image"/>
+                <text class="bestTop_text_1">{{firstName}}</text>
+                <text class="bestTop_text_2">{{firstScore}}</text>
+            </swiper-item>
+            <swiper-item class="bestTop_item">
+                <image src="{{testImage}}" class="bestTop_image"/>
+                <text class="bestTop_text_1">{{firstName}}</text>
+                <text class="bestTop_text_2">{{firstScore}}</text>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="otherTop">
+        <scroll-view scroll-y="40vh" class="otherTop_view">
+            <view class="otherTop_item">
+                <text class="otherTop_num">No.4</text>
+                <image class="otherTop_image" src="{{testImage}}"/>
+                <text class="otherTop_name">xxx</text>
+                <text class="otherTop_score">0</text>
+            </view>
+            <view class="otherTop_item">
+                <text class="otherTop_num">No.5</text>
+                <image class="otherTop_image" src="{{testImage}}"/>
+                <text class="otherTop_name">xxx</text>
+                <text class="otherTop_score">0</text>
+            </view>
+            <view class="otherTop_item">
+                <text class="otherTop_num">No.6</text>
+                <image class="otherTop_image" src="{{testImage}}"/>
+                <text class="otherTop_name">xxx</text>
+                <text class="otherTop_score">0</text>
+            </view>
+            <view class="otherTop_item">
+                <text class="otherTop_num">No.44</text>
+                <image class="otherTop_image" src="{{testImage}}"/>
+                <text class="otherTop_name">xxx</text>
+                <text class="otherTop_score">0</text>
+            </view>
+            <view class="otherTop_item">
+                <text class="otherTop_num">No.50</text>
+                <image class="otherTop_image" src="{{testImage}}"/>
+                <text class="otherTop_name">xxx</text>
+                <text class="otherTop_score">1000</text>
+            </view>
+        </scroll-view>
+        <view class="myTop">
+            <text class="myTop_name">我的</text>
+            <image class="myTop_image" src="{{testImage}}"/>
+            <text class="myTop_num">No.1800</text>
+            <text class="myTop_score">1000</text>
+        </view>
+    </view>
+</view>

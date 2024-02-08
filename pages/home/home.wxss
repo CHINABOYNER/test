@@ -1,0 +1,121 @@
+.web {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bitworkshop_logo {
+    position: absolute;
+    height: 100rpx;
+    width: 100rpx;
+    top: 80rpx;
+    left: 20rpx;
+    animation: rotate 3s linear infinite;
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border: 0;
+    border-radius: 50%;
+    box-shadow: -4rpx -8rpx 8rpx rgba(0, 0, 0, 0.2),4rpx 8rpx 8rpx rgba(0, 0, 0, 0.2);
+}
+
+.play_back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    height: 82vw;
+    width: 82vw;
+    z-index: -1;
+    background: linear-gradient(70deg, #F3E37F, #FB506E);
+}
+
+.play_text {
+    position: absolute;
+    height: 150rpx;
+    width: 80vw;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.play_text_1 {
+    font-size: 70rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-family: serif;
+}
+
+.play_text_2 {
+    font-size: 30rpx;
+    line-height: 50rpx;
+    text-align: center;
+    font-family: serif;
+    font-weight: lighter;
+}
+
+.top,.rule {
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: -4rpx -8rpx 8rpx rgba(0, 0, 0, 0.2),4rpx 8rpx 8rpx rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: lighter;
+    font-size: 40rpx;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.top {
+    top: 75vh;
+    background-color: #40CDC1;
+}
+
+.rule {
+    top: 85vh;
+    background-color: #F8A771;
+}
+
+.back {
+    position: absolute;
+    transform: translate(-50% , -50%);
+    top: 90vh;
+    left: 50%;
+    background-color: transparent;
+    border: 1px white solid;
+    color: white;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-play {
+    0% {
+        background: linear-gradient(0deg, blue, red);
+    }
+
+    100% {
+        background: linear-gradient(360deg, blue ,red);
+    }
+}

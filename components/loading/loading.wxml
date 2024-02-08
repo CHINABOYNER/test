@@ -1,0 +1,14 @@
+<view class="web">
+    <view class="loading_view">
+        <view class="bar bar1"></view>
+        <view class="bar bar2"></view>
+        <view class="bar bar3"></view>
+        <view class="bar bar4"></view>
+        <view class="bar bar5"></view>
+        <view class="bar bar6"></view>
+        <view class="bar bar7"></view>
+        <view class="bar bar8"></view>
+    </view>
+    <text class="loading_text">正在载入，请稍后...</text>
+    <image src="../../images/bitworkshop_logo_magic_little.png" class="bitworkshop_icon"/>
+</view>

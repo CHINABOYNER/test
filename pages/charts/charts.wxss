@@ -1,0 +1,152 @@
+.web {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.back_icon {
+    position: absolute;
+    z-index: 1;
+}
+
+.charts_title {
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    font-size: 40rpx;
+}
+
+.bestTop {
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+}
+
+.bestTop_view {
+    height: 50vh;
+    width: 100vw;
+}
+
+.bestTop_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.bestTop_image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    height: 400rpx;
+    width: 400rpx;
+}
+
+.bestTop_text_1,.bestTop_text_2 {
+    position: absolute;
+    line-height: 200rpx;
+    width: 450rpx;
+    text-align: center;
+    font-family: serif;
+}
+
+.bestTop_text_1 {
+    top: 550rpx;
+    color: #F8ADC1;
+    font-size: 80rpx;
+}
+
+.bestTop_text_2 {
+    top: 650rpx;
+    font-size: 50rpx;
+}
+
+.otherTop {
+    position: relative;
+    height: 40vh;
+    width: 100vw;
+}
+
+.otherTop_view {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.otherTop_item {
+    height: 120rpx;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px grey solid;
+}
+
+.otherTop_num {
+    line-height: 120rpx;
+    width: 20vw;
+    text-align: center;
+    font-family: serif;
+    font-size: 50rpx;
+}
+
+.otherTop_image {
+    height: 120rpx;
+    width: 120rpx;
+}
+
+.otherTop_name {
+    line-height: 120rpx;
+    width: 40vw;
+    margin: 0 5vw;
+    font-size: 50rpx;
+}
+
+.otherTop_score {
+    line-height: 120rpx;
+    width: 10vw;
+    text-align: right;
+}
+
+.myTop {
+    height: 10vh;
+    width: 100vw;
+    background-color: #FFD889;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.myTop_image {
+    height: 8vh;
+    width: 8vh;
+    margin: 1vh;
+}
+
+.myTop_num {
+    line-height: 10vh;
+    width: 40vw;
+    font-size: 50rpx;
+    font-family: serif;
+    font-weight: bold;
+    margin: 0 5vw;
+}
+
+.myTop_score {
+    line-height: 10vh;
+    width: 10vw;
+    text-align: right;
+}
+
+.myTop_name {
+    line-height: 10vh;
+    width: 15vw;
+    text-align: center;
+    font-size: 50rpx;
+    font-family: serif;
+}

@@ -1,0 +1,59 @@
+.web {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.bitworkshop_icon {
+    position: absolute;
+    height: 20vw;
+    width: 20vw;
+    left: 40vw;
+    top: 40vh;
+    animation: rotate 5s linear infinite;
+}
+
+.note {
+    position: absolute;
+    height: 10vw;
+    width: 10vw;
+    left: 45vw;
+    top: 42vh;
+}
+
+.message_title {
+    position: absolute;
+    line-height: 50rpx;
+    font-size: 50rpx;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    top: 55%;
+    color: white;
+}
+
+.message_view {
+    position: absolute;
+    top: 60vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    font-size: 35rpx;
+    text-align: center;
+    color: white;
+}
+
+.message {
+    margin: 10rpx;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

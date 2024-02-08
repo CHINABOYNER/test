@@ -1,0 +1,18 @@
+<view class="web">
+    <image src="https://iashaw-1318257216.cos.ap-shanghai.myqcloud.com/MDYY/home_background.png" mode="aspectFill" class="background"/>
+    <image src="https://iashaw-1318257216.cos.ap-shanghai.myqcloud.com/MDYY/bitworkshop_logo.png" class="bitworkshop_logo" bindtap="show_message"/>
+    <button class="play" style="height: 80vw; width: 80vw;" bindtap="login">
+        <view class="play_back"></view>
+        <view class="play_text">
+            <text class="play_text_1">听，这是MUSIC</text>
+            <text class="play_text_2">轻触圆以开始音乐之旅</text>
+        </view>
+    </button>
+    <!-- <button class="top" style="height: 5vh; width: 50vw;" bindtap="toTop">Top</button> -->
+    <!-- <button class="rule" style="height: 5vh; width: 50vw;" bindtap="show_rule">比特工场制作</button> -->
+    <button class="rule" style="height: 5vh; width: 50vw;">比特工场制作</button>
+    <loading wx:if="{{ready}}"></loading>
+    <developer wx:if="{{show_message}}"></developer>
+    <rule wx:if="{{show_rule}}" id="r"></rule>
+    <button class="back" style="height: 80rpx; width: 30vw;" bindtap="back" wx:if="{{back_button}}">知道了</button>
+</view>

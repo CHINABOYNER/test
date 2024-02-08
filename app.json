@@ -1,0 +1,23 @@
+{
+    "pages":[
+        "pages/home/home",
+        "pages/play_music/play_music",
+        "pages/charts/charts",
+        "pages/choose/choose",
+        "pages/answer/answer",
+        "pages/result/result"
+    ],
+    "window":{
+        "navigationStyle": "custom"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+
+    "usingComponents": {
+        "loading": "./components/loading/loading",
+        "developer": "./components/developer/developer",
+        "rule": "./components/rule/rule",
+        "right": "./components/right/right",
+        "wrong": "./components/wrong/wrong"
+    }
+}

@@ -1,0 +1,32 @@
+.web {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.bit_icon {
+    position: absolute;
+    height: 200rpx;
+    width: 200rpx;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.text {
+    position: absolute;
+    line-height: 60rpx;
+    font-size: 60rpx;
+    color: #A2CEDA;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    top: 35%;
+    font-family: serif;
+    border: 1px white solid;
+    padding: 2vh 2vw;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 70vw;
+}

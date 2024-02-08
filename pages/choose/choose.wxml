@@ -1,0 +1,14 @@
+<view class="web">
+    <view class="message_view">
+        <text class="title">单选答题</text>
+        <view class="choose_view">
+            <button class="choose" style="height: 6vh; width: 60vw;" bindtap="{{choose1}}">{{choose_message_1}}</button>
+            <button class="choose" style="height: 6vh; width: 60vw;" bindtap="{{choose2}}">{{choose_message_2}}</button>
+            <button class="choose" style="height: 6vh; width: 60vw;" bindtap="{{choose3}}">{{choose_message_3}}</button>
+            <button class="choose" style="height: 6vh; width: 60vw;" bindtap="{{choose4}}">{{choose_message_4}}</button>
+        </view>
+    </view>
+    <right wx:if="{{right_view}}" id="right"></right>
+    <wrong wx:if="{{wrong_view}}" id="wrong"></wrong>
+    <button wx:if="{{next_button}}" class="next" bindtap="next">查看答案</button>
+</view>

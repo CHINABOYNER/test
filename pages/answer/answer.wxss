@@ -1,0 +1,68 @@
+.web {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.title_icon {
+    position: absolute;
+    height: 100rpx;
+    width: 100rpx;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.title_text {
+    position: absolute;
+    line-height: 50rpx;
+    font-size: 40rpx;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.answer_image {
+    position: absolute;
+    height: 400rpx;
+    width: 400rpx;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 15px;
+}
+
+.answer_icon {
+    position: absolute;
+    height: 250rpx;
+    width: 250rpx;
+    transform: translate(-50% , -50%);
+    left: 80%;
+    top: 50%;
+}
+
+.message {
+    position: absolute;
+    height: auto;
+    width: 600rpx;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    top: 33%;
+    border-radius: 30px;
+    padding: 20rpx;
+    font-size: 40rpx;
+    text-indent: 80rpx;
+    background-color: white;
+}
+
+.next {
+    position: absolute;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    top: 85%;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 40rpx;
+    text-align: center;
+    font-family: serif;
+}

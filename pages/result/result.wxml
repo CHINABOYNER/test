@@ -1,0 +1,9 @@
+<view class="web">
+    <image src="https://iashaw-1318257216.cos.ap-shanghai.myqcloud.com/MDYY/result_icon.png" class="result_icon"/>
+    <text class="score">{{score}}</text>
+    <text class="title">{{title}}</text>
+    <text class="message">{{message}}</text>
+    <button class="share" style="height: 100rpx; width: 80vw;">让朋友们猜猜</button>
+    <button class="back_index" style="height: 100rpx; width: 80vw;" bindtap="toHome">返回首页</button>
+    <button class="check_top" style="height: 100rpx; width: 80vw;" bindtap="toTop">查看排行榜</button>
+</view>
